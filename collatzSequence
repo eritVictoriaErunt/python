@@ -1,0 +1,15 @@
+#enter a number and collatz will evaluate to 1
+def collatz(number):
+    while number != 1: 
+        if number % 2 == 1:# remainder = 1, odd
+            number = 3 * number + 1
+            print(number)
+        else:
+            number = number //2 # remainder = 0, even
+            print(number)
+
+        
+print('Enter a number')
+
+inputNum = int(input())
+collatz(inputNum)
